@@ -1,0 +1,131 @@
+*{
+   
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+  font-family: verdana;
+
+}
+
+header{
+  position: absolute;
+  top: 5%;
+  right: 25%;
+  color:white;
+  text-align: center;
+  background:blue ;
+  border-radius: 10px;
+  width: 55%;
+  margin:auto;
+  font-size: 75%;
+  margin-bottom: 100%;
+ }
+
+#corpoPrincipal{
+  width: 50%;
+/* background: rgb(65, 76, 231),linear-gradient(rgb(187, 183, 183),rgba(236, 229, 229, 0.993))*/
+ background: url("tabuada.png"),linear-gradient(rgba(151, 147, 147, 0.769),rgba(236, 229, 229, 0.758))
+
+}
+
+#corpoSegundario{
+  position: absolute;
+  background: rgba(245, 199, 199, 0.705);
+  border-radius: 10px;
+  padding: 60px;
+  width: 52%;
+  margin:auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+  top: 15%;
+  right: 25%;
+  text-align: center;
+  
+}
+
+#rodape{
+  position: fixed;
+  left:10% ;
+  bottom: 2%;
+  width: 80%;
+  color:white;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold
+
+}
+
+#dados{
+
+  text-align:left;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold
+
+}
+
+#resultado{
+
+  text-align:left;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold
+  
+
+}
+
+#botao{
+   
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  background: #043481;
+  color: white;
+  font-size: 15px;
+  padding: 1%;
+  margin: auto;
+
+  
+}
+
+#tab{
+
+  width: 30%;
+  text-align:center;
+
+}
+
+#tab2{
+  
+  width: 30%;
+  text-align:center;
+
+}
+.tab2Text {
+  
+  font-size: 16px;
+  margin: 10%;;
+  width: 100%;
+  text-align:center;
+  
+}
+
+#tab3{
+  
+  width: 30%;
+  text-align:center;
+
+
+}
+
+#sele{
+  
+  margin:auto;
+  width: 168px;
+  border-radius: 5px;
+  font-family: Arial;
+  font-weight: bold
+ 
+  
+
+}
+
