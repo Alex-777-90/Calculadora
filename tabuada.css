@@ -126,7 +126,7 @@ header {
 #botao {
   width: 50%;
   margin-left: 25%;
-  margin-top: 10px;
+  margin-top: 15px;
   background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
   color: whitesmoke;
   padding: 7px;
@@ -193,6 +193,22 @@ header {
   #resultado {
     width: 220%;
     margin-left: -67%; 
+  }
+
+}
+
+@media (max-width:1310px) and (min-width:951px) {
+
+  #resultado {
+    margin-top: 85px;
+  }
+
+}
+
+@media (max-width:794px) and (min-width:200px) {
+  
+  #resultado {
+    margin-top: 85px;
   }
 
 }
