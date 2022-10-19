@@ -18,54 +18,59 @@
 
   <section id = "corpoSegundario">
 
-    <div id="dados">
+        <div id="dados">
 
-      <p><strong class="tab2Text">Digite um número     </strong><input type="number" name="box4" id="tab">
-         <br><br><br>
+            <form>
+                <div class="form-control">
+                    <label class="tab2Text" > Digite um número </label>
+                    <input type="number" name="box4" id="tab">
+                </div> 
 
-        <strong class ="tab2Text">Digite outro número </strong><input type="number" name="box4" id="tab2">
-        <br><br><br>
+                <div class="form-control"> 
+                    <label class ="tab2Text"> Digite outro número </label>
+                    <input type="number" name="box4" id="tab2">
+                </div>     
+                
+                <div class="form-control"> 
+                    <label class ="tab2Text" id="op_matematica"> Operação matematica </label>
+            
+                        <select name="" id="SeleMath">
+                            <option value="">Tabuada</option>
+                            <option value="">Multiplicação</option>
+                            <option value="">Subtração</option>
+                            <option value="">Soma</option>
+                            <option value="">Divisão</option>
+                            <option value="">Porcentagem</option>
+                        </select>
+
+                        <input id ="botao" type="button" value="Gerar calculo" onclick="carregar2()">
+                        
+                  </div>          
         
-        <strong class ="tab2Text"> Operação matematica </strong>
-        <select name="" id="SeleMath">
-          <option value="">Tabuada</option>
-          <option value="">Multiplicação</option>
-          <option value="">Subtração</option>
-          <option value="">Soma</option>
-          <option value="">Divisão</option>
-          <option value="">Porcentagem</option>
-        </select>
-        <br><br><br><br>
-        <input id ="botao" type="button" value="Gerar calculo" onclick="carregar2()">
-        <br><br><br>
+                
+    
+            </form>
 
-      </p>
+        </div>
 
 
-    </div>
+        <div id ="resultado">
 
+              <select name="tabb" id="sele" size = 11 >
+              
+                    <option value="">Digite os números acima</option>
 
-    <div id ="resultado">
+              </select>
 
-      <select name="tabb" id="sele" size = 11 >
-      
-        <option value="">Digite os números acima</option>
-
-      </select>
-
-  
-    </div>
-
-
+         </div>
 
 
   </section>
 
 
-  
   <footer id = "rodape">
     <p id = rodapeParagrafo>&copy;Treino de programação</p>
- </footer>
+  </footer>
 
 </body>
 

@@ -7,168 +7,194 @@
 
 }
 
-header{
- 
+header {
   color:white;
   text-align: center;
-  background:blue ;
+  background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
   border-radius: 10px;
-  width: 95%;
+  width: 30%;
   font-size: 75%;
-  margin-left: 40%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  
-  
+  margin-left: 35%; 
+  margin-bottom: 20px;
+  margin-top: 100px;
+  padding: 7px;
  }
 
- html, body { height: 100%;} /* serve para definir um padrão de height assim consigo mudar a altura da select */
-
-#corpoPrincipal{
-  
-  width: 57%;
-/* background: rgb(65, 76, 231),linear-gradient(rgb(187, 183, 183),rgba(236, 229, 229, 0.993))*/
-  background-image: url("tabuada.png"),linear-gradient(rgba(151, 147, 147, 0.769),rgba(236, 229, 229, 0.758))
+ #corpoPrincipal {
+  /* background-color: aqua; */
+  background: linear-gradient(90deg,#15ced1 0%,#0462b4 100%);
  
+}
+
+#corpoSegundario {
+  /* background-color: cadetblue; */
+  width: 30%;
+  margin-left: 35%;
+  height: 500px;
+}
+
+#dados {
+  /* background-color: chartreuse; */
+  height: 280px;
+ 
+}
+
+#dados form {
+  /* background-color: darkred; */
+  height: 280px;
+  padding-top: 10px;
 
 }
 
-#corpoSegundario{
-  /*height: 65%;*/
-  height: 570px;
-  background: rgba(245, 199, 199, 0.792);
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(12, 182, 182);
   border-radius: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin: 5% 30% -40% 40%; /* o primeiro px é o top ,o segundo é o right,3 é o baixo, o 4 é a esquerda   */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.71);
-  text-align: left;
-  width: 95%;
+  /* padding-left: 20px; */
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
  
-
 }
 
-#rodape{
+.form-control label {
+  margin-bottom: 5px;
+  color: #054379;
+  font-weight: 700;
+ 
+}
 
-  margin-left: 50%;
-  margin-bottom: 52%;
-  margin-top: 52%;
+.form-control label ,
+.form-control input {
   width: 80%;
-  color:white;
-  text-align: center;
-  font-style: italic;
-  font-weight: bold
- 
+  margin-left: 10%;
 
 }
 
-#resultado{
- 
-  text-align:left;
+.form-control input {
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  color: #054379;
+  font-size: 14.5px;
+}
+
+.form-control select ,
+#op_matematica {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.form-control select {
+  border-radius: 10px;
   padding: 5px;
-  font-size: 20px;
-  font-weight: bold
- 
- 
+  color: #054379;
 }
 
-#botao{
-
-  height: 30px;
-  cursor: pointer;
-  border-radius: 7px;
-  border: 0;
-  background: #043481;
-  color: white;
-  font-size: 15px;
-  padding: 1%;
-  margin: auto;
-  width: 150px
-  
-
+#resultado {
+  width: 100%;
+  /* height: 220px; */
+  /* background-color: rgb(12, 192, 192); */
+  border-radius: 10px;
+  background-color: rgba(20, 180, 220, 0.797);
+  margin-top: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   
 }
 
-#tab{
-
-  
-  width: 170px;
-  text-align:center;
-  box-shadow: 4px 4px rgba(0,0,0,0.4);
-  border-radius: 5px;
-  cursor: pointer;
-  float: right
-  
- /* margin-left: 30%;
-  margin-right: 8% */
-  
-  
-
-}
-
-#tab2{
-  
-  width: 170px;
-  text-align:center;
-  box-shadow: 4px 4px rgba(0,0,0,0.4);
-  border-radius: 5px;
-  cursor: pointer;
-  float: right /* possiona no lado direito  */
-  /*  margin-left: 20%;
-  margin-right: 10.5% */
-  
-
-}
-.tab2Text {
-
-  border: 0px solid white; 
-  font-size: 120%;
-  width: 120%;
-  text-align:left;
-  margin-top: 52%;
-  margin-left: 1%;
-  text-shadow: 0 0 2px rgba(51, 22, 166, 0.225)
-
-
-
-  
-}
-
-
-#sele{
- 
-  box-shadow: 4px 4px rgba(0,0,0,0.4);
+#resultado  select{ 
+  margin-top: -10px;
+  background-color:rgba(233, 242, 245, 0.797);
+  overflow-y:scroll;
   overflow-x: scroll;
-  overflow-y: scroll;
-  white-space: nowrap;
-  margin:auto;
-  text-align:center;
-  width: 150px;
-  border-radius: 5px;
-  font-family: Arial;
-  font-weight: bold
-  
+  width: 50%;
+  margin-left: 25%;
+  border: none;
+  font-weight: bolder;
+  font-size: 14.5px;
+  color: #054379;
+  padding-left: 4px;
 
 }
 
-#SeleMath{
- 
-  box-shadow: 4px 4px rgba(0,0,0,0.4);
-  width: 170px;
-  text-align:center;
-  border-radius: 5px;
-  cursor: pointer;
-  float: right
+.tab2Text {
   
- 
-  /* margin-left: 17.5%;
-  margin-right: 13% */
 
-
+}
+#botao {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+  background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
+  color: whitesmoke;
+  padding: 7px;
+  font-weight: bolder;
 }
 
 
+#rodape {
+  margin-top: 160px;
+  width: 100%;
+  /* background-color: #054379; */
+  background: linear-gradient(90deg,#054379 0%,#0ba5a8 100%);
+  padding: 20px;
+  color: cyan;
+}
+
+@media (max-width:950px) {
+
+  header {
+    width: 50%;
+    margin-left: 25%; 
+  }
+  .form-control {
+    width: 165%;
+    margin-left: -31%; 
+  }
+
+  #resultado {
+    width: 165%;
+    margin-left: -31%; 
+  }
+
+}
+
+@media (max-width:666px) {
+
+  header {
+    width: 55%;
+    margin-left: 25%; 
+  }
+  .form-control {
+    width: 180%;
+    margin-left: -31%; 
+  }
+
+  #resultado {
+    width: 180%;
+    margin-left: -31%; 
+  }
+
+}
+
+@media (max-width:500px) {
+
+  header {
+    width: 67%;
+    margin-left: 15%; 
+  }
+  .form-control {
+    width: 220%;
+    margin-left: -67%; 
+  }
+
+  #resultado {
+    width: 220%;
+    margin-left: -67%; 
+  }
+
+}
 
 
