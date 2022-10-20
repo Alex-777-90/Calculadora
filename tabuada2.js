@@ -5,6 +5,7 @@ function carregar2(){
  let selec = window.document.getElementById("sele");
  let selec2 = window.document.getElementById("SeleMath");
  let res3 = window.document.getElementById("resultado");
+ let imgCalculator = window.document.getElementById("resultado2")
  let DadosOperacao = selec2.options[selec2.selectedIndex].text;
 
 
@@ -26,6 +27,9 @@ function carregar2(){
    
       if(DadosOperacao === "Tabuada"){
        
+      res3.style.display ="block" 
+      imgCalculator.style.display ="none"
+
       for(let i = 0 ; i <= caixaQTD ; i++){
 
       let lista = document.createElement(`option`)
@@ -35,13 +39,19 @@ function carregar2(){
       }
 
    }else if(DadosOperacao === "Multiplicação"){
-       
+
+      res3.style.display ="block" 
+      imgCalculator.style.display ="none"
+  
       let lista = document.createElement(`option`)
       lista.text =`${caixaNum} x ${caixaQTD} = ${caixaNum * caixaQTD}`
       lista.value = ``
       selec.appendChild(lista)
 
    }else if(DadosOperacao === "Subtração"){
+
+      res3.style.display ="block" 
+      imgCalculator.style.display ="none"
      
       let lista = document.createElement(`option`)
       lista.text =`${caixaNum} - ${caixaQTD} = ${caixaNum - caixaQTD}`
@@ -50,12 +60,18 @@ function carregar2(){
 
    }else if (DadosOperacao === "Soma"){
 
+      res3.style.display ="block" 
+      imgCalculator.style.display ="none"
+
       let lista = document.createElement(`option`)
       lista.text =`${caixaNum} + ${caixaQTD} = ${caixaNum + caixaQTD}`
       lista.value = ``
       selec.appendChild(lista)
 
    }else if (DadosOperacao === "Divisão"){
+
+      res3.style.display ="block" 
+      imgCalculator.style.display ="none"
      
       let lista = document.createElement(`option`)
       lista.text =`${caixaNum} / ${caixaQTD} = ${caixaNum / caixaQTD}`
@@ -63,6 +79,9 @@ function carregar2(){
       selec.appendChild(lista)
 
    }else if(DadosOperacao === "Porcentagem"){
+
+      res3.style.display ="block" 
+      imgCalculator.style.display ="none"
      
       let lista = document.createElement(`option`)
       lista.text =`${caixaNum} % ${caixaQTD} = ${Math.round(caixaNum / caixaQTD*100)} % `
