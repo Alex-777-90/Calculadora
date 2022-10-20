@@ -11,10 +11,11 @@ header {
   color:white;
   text-align: center;
   background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
+  box-shadow: -6px 6px 40px #054379 ;
   border-radius: 10px;
-  width: 30%;
+  width: 34%;
   font-size: 75%;
-  margin-left: 35%; 
+  margin-left: 33%; 
   margin-bottom: 20px;
   margin-top: 100px;
   padding: 7px;
@@ -28,8 +29,8 @@ header {
 
 #corpoSegundario {
   /* background-color: cadetblue; */
-  width: 30%;
-  margin-left: 35%;
+  width: 34%;
+  margin-left: 33%;
   height: 500px;
 }
 
@@ -50,6 +51,7 @@ header {
   margin-bottom: 10px;
   padding-bottom: 20px;
   background-color: rgb(12, 182, 182);
+  box-shadow: -6px 6px 40px rgb(5, 126, 126) ;
   border-radius: 10px;
   /* padding-left: 20px; */
   padding-top: 10px;
@@ -99,7 +101,7 @@ header {
   /* background-color: rgb(12, 192, 192); */
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
-  margin-top: 75px;
+  margin-top: 65px;
   padding-top: 20px;
   padding-bottom: 20px;
   
@@ -109,7 +111,8 @@ header {
   width: 100%;
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
-  margin-top: 75px;
+  box-shadow: -6px 6px 40px rgb(5, 126, 126) ;
+  margin-top: 65px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -176,18 +179,18 @@ header {
     margin-left: 25%; 
   }
   .form-control {
-    width: 165%;
-    margin-left: -31%; 
+    width: 147%;
+    margin-left: -23%; 
   }
 
   #resultado {
-    width: 165%;
-    margin-left: -31%; 
+    width: 147%;
+    margin-left: -23%; 
   }
 
   #resultado2{
-    width: 165%;
-    margin-left: -31%; 
+    width: 147%;
+    margin-left: -23%; 
   }
 
 }
@@ -195,8 +198,8 @@ header {
 @media (max-width:666px) {
 
   header {
-    width: 55%;
-    margin-left: 25%; 
+    width: 61%;
+    margin-left: 22.2%; 
   }
   .form-control {
     width: 180%;
@@ -220,6 +223,7 @@ header {
   header {
     width: 67%;
     margin-left: 15%; 
+ 
   }
   .form-control {
     width: 220%;
@@ -238,28 +242,57 @@ header {
 
 }
 
-@media (max-width:1310px) and (min-width:951px) {
+@media (max-width:1156px) and (min-width:951px) {
 
   #resultado {
-    margin-top: 85px;
+    margin-top: 83px;
   }
 
   #resultado2 {
-    margin-top: 85px;
+    margin-top: 83px;
   }
 
 }
 
-@media (max-width:794px) and (min-width:200px) {
+@media (max-width:786px) and (min-width:200px) {
   
   #resultado {
-    margin-top: 85px;
+    margin-top: 83px;
   }
 
   #resultado2 {
-    margin-top: 85px;
+    margin-top: 83px;
   }
 
 }
 
+@media (max-width:307px){
+  
+  #resultado {
+    margin-top: 102px;
+  }
 
+  #resultado2 {
+    margin-top: 102px;
+  }
+
+}
+
+@media (max-width:487px){
+
+  header {
+    width: 75%;
+    margin-left: 10%; 
+  }
+
+
+}
+
+@media (max-width:500px) and (min-width:488px) {
+
+  header {
+    width: 75%;
+    margin-left: 10%; 
+  }
+
+}
