@@ -157,6 +157,7 @@ header {
   margin-left: 25%;
   margin-top: 15px;
   background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
+  box-shadow: -2px 2px 3px #037e81 ;
   color: whitesmoke;
   padding: 7px;
   font-weight: bolder;
