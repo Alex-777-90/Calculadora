@@ -154,6 +154,7 @@ function carregar(){
    
       labelFirst.textContent = "Digite um número"
       labelSecond.textContent = "Digite outro número"
+      tabd.placeholder = ""
       
    }
    console.log(selec2.value)
