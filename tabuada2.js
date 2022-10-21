@@ -130,7 +130,7 @@ function carregar(){
     }
   }
 
-
+  let tabd = window.document.getElementById("tab");
   let selec2 = window.document.getElementById("SeleMath");
   let labelFirst = window.document.querySelector("#labelFirst");
   let labelSecond = window.document.querySelector("#labelSecond");
@@ -142,6 +142,8 @@ function carregar(){
    if(DadosOperacao2 === "IMC"){
       labelFirst.textContent = "Altura"
       labelSecond.textContent = "Peso"
+      tabd.placeholder = "Ponto ou virgula EX:(1,87)"
+
 
    }else if(DadosOperacao2 === "Tabuada" ||
    DadosOperacao2 === "Multiplicação" ||
@@ -152,7 +154,7 @@ function carregar(){
    
       labelFirst.textContent = "Digite um número"
       labelSecond.textContent = "Digite outro número"
-
+      
    }
    console.log(selec2.value)
 
