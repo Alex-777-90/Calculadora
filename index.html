@@ -10,7 +10,7 @@
 
 </head>
 
-<body id ="corpoPrincipal"onload="carregar2()">
+<body id ="corpoPrincipal" onload="carregar()">
 
   <header>
     <h1>Calculadora</h1>
@@ -22,30 +22,30 @@
 
             <form>
                 <div class="form-control">
-                    <label class="tab2Text" > Digite um número </label>
+                    <label class="tab2Text" id="labelFirst" > Digite um número </label>
                     <input type="number" name="box4" id="tab">
                 </div> 
 
                 <div class="form-control"> 
-                    <label class ="tab2Text"> Digite outro número </label>
+                    <label class ="tab2Text" id="labelSecond" > Digite outro número </label>
                     <input type="number" name="box4" id="tab2">
                 </div>     
                 
                 <div class="form-control"> 
-                    <label class ="tab2Text" id="op_matematica"> Operação matematica </label>
+                    <label class ="tab2Text" id="op_matematica"> Tipo de calculo </label>
             
                         <select name="" id="SeleMath">
-                            <option value="">Tabuada</option>
-                            <option value="">Multiplicação</option>
-                            <option value="">Subtração</option>
-                            <option value="">Soma</option>
-                            <option value="">Divisão</option>
-                            <option value="">Porcentagem</option>
+                            <option value="Tabuada">Tabuada</option>
+                            <option value="Multiplicação">Multiplicação</option>
+                            <option value="Subtração">Subtração</option>
+                            <option value="Soma">Soma</option>
+                            <option value="Divisão">Divisão</option>
+                            <option value="Porcentagem">Porcentagem</option>
+                            <option value="IMC">IMC</option>
                         </select>
 
-                        <input id ="botao" type="button" value="Gerar calculo" onclick="carregar2()">
-                        
-                  </div>        
+                        <input id ="botao" type="button" value="Gerar calculo" onclick="carregar()">
+                </div>        
             </form>
 
         </div>
@@ -64,6 +64,11 @@
         <div id ="resultado2">
            <p>Digite valores para calcular </p>
            <img src="./img-calculator-removebg-preview.png">
+        </div>
+
+        <div id="resultadoIMC">
+
+
         </div>
 
 

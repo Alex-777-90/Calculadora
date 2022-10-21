@@ -102,7 +102,7 @@ header {
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
-  margin-top: 65px;
+  margin-top: 63px;
   padding-top: 20px;
   padding-bottom: 20px;
   
@@ -113,12 +113,34 @@ header {
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
-  margin-top: 65px;
+  margin-top: 63px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 
 }
+
+#resultadoIMC {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(20, 180, 220, 0.797);
+  box-shadow: -6px 6px 40px rgb(5, 126, 126);
+  margin-top: 63px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: #054379;
+  font-weight: bolder;
+
+}
+
+#resultadoIMC a p {
+  margin-top: 10px;
+}
+
 
 #resultado2 p {
   font-weight: bolder;
@@ -162,6 +184,12 @@ header {
   color: whitesmoke;
   padding: 7px;
   font-weight: bolder;
+  cursor: pointer;
+  transition:all 2s
+}
+
+#botao:hover { 
+  background: linear-gradient(90deg,#f4fc03 0%,#fa0303 100%);
 }
 
 
@@ -195,6 +223,11 @@ header {
     margin-left: -23%; 
   }
 
+  #resultadoIMC {
+    width: 147%;
+    margin-left: -23%; 
+  }
+
 }
 
 @media (max-width:666px) {
@@ -218,64 +251,38 @@ header {
     margin-left: -31%; 
   }
 
+  #resultadoIMC {
+    width: 180%;
+    margin-left: -31%; 
+  }
+
 }
 
 @media (max-width:500px) {
 
   header {
-    width: 67%;
+    width: 68%;
     margin-left: 15%; 
  
   }
   .form-control {
-    width: 220%;
+    width: 235%;
     margin-left: -67%; 
   }
 
   #resultado {
-    width: 220%;
+    width: 235%;
     margin-left: -67%; 
   }
 
   #resultado2 {
-    width: 220%;
+    width: 235%;
     margin-left: -67%; 
   }
 
-}
-
-@media (max-width:1156px) and (min-width:951px) {
-
-  #resultado {
-    margin-top: 83px;
-  }
-
-  #resultado2 {
-    margin-top: 83px;
-  }
-
-}
-
-@media (max-width:786px) and (min-width:200px) {
-  
-  #resultado {
-    margin-top: 83px;
-  }
-
-  #resultado2 {
-    margin-top: 83px;
-  }
-
-}
-
-@media (max-width:307px){
-  
-  #resultado {
-    margin-top: 102px;
-  }
-
-  #resultado2 {
-    margin-top: 102px;
+  #resultadoIMC {
+    width: 235%;
+    margin-left: -67%; 
   }
 
 }
@@ -283,7 +290,7 @@ header {
 @media (max-width:487px){
 
   header {
-    width: 75%;
+    width: 79%;
     margin-left: 10%; 
   }
 
@@ -293,8 +300,20 @@ header {
 @media (max-width:500px) and (min-width:488px) {
 
   header {
-    width: 75%;
+    width: 80%;
     margin-left: 10%; 
   }
 
 }
+
+@media(max-width:335px) {
+
+  #op_matematica {
+      font-size: 80%;  
+  }
+}
+
+
+
+
+
