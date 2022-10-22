@@ -12,7 +12,7 @@ function carregar(){
   
     if(tabd.value.length === "" || Number(tabd.value <= 0 )){
   
-      window.alert("Por favor digite  um valor válido , qualquer número maior que zero");
+      // window.alert("Por favor digite  um valor válido , qualquer número maior que zero");
   
     }else if(tabd2.value.length === "" || tabd2.value <= 0){
   
