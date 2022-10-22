@@ -125,15 +125,42 @@ function carregar(){
                  <p> Para saber mais clique aqui</p>
               </a>
            `
+       }else if(DadosOperacao === "Raiz") {
+
+         res3.style.display ="none" 
+         imgCalculator.style.display ="none"
+         resultadoIMC.style.display ="block"
+
+         if(caixaQTD !== 2 && caixaQTD !== 3) {
+            window.alert("O campo só recebe a raiz  2 ou 3 ");
+
+         }else if(caixaQTD == 2){
+
+            resultadoIMC.innerHTML = `
+            <p> A raiz quadrada de ${caixaNum} é ${Math.sqrt(caixaNum)}</p> 
+            `
+
+         }else if(caixaQTD == 3){
+
+            resultadoIMC.innerHTML = `
+            <p> A raiz cúbica de ${caixaNum} é ${Math.cbrt(caixaNum)}</p> 
+            `
+
+         }
+         console.log("testando")
+
        }
   
     }
   }
 
   let tabd = window.document.getElementById("tab");
+  let tabd2 = window.document.getElementById("tab2");
   let selec2 = window.document.getElementById("SeleMath");
   let labelFirst = window.document.querySelector("#labelFirst");
   let labelSecond = window.document.querySelector("#labelSecond");
+  let firstDiv = window.document.querySelector("#firstDiv");
+  let secondDiv = window.document.querySelector("#secondDiv");
 
   selec2.addEventListener("change",function(){
 
@@ -143,20 +170,33 @@ function carregar(){
       labelFirst.textContent = "Altura"
       labelSecond.textContent = "Peso"
       tabd.placeholder = "Ponto ou virgula EX:(1,87)"
-
+      tabd.value =""
+      tabd2.value = ""
 
    }else if(DadosOperacao2 === "Tabuada" ||
    DadosOperacao2 === "Multiplicação" ||
    DadosOperacao2 === "Subtração" ||
    DadosOperacao2 === "Soma"||
    DadosOperacao2 === "Divisão" ||
-   DadosOperacao === "Porcentagem") {
+   DadosOperacao2 === "Porcentagem" ||
+   DadosOperacao2 === "Raiz") {
    
       labelFirst.textContent = "Digite um número"
       labelSecond.textContent = "Digite outro número"
       tabd.placeholder = ""
       
    }
+
+   if(DadosOperacao2 === "Raiz") {
+
+      labelFirst.textContent = "Número"
+      labelSecond.textContent = "Quadrada(2)/cúbica(3)"
+      tabd.value =""
+      tabd2.value = ""
+
+   }
+
+
    console.log(selec2.value)
 
 })

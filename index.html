@@ -22,12 +22,12 @@
         <div id="dados">
 
             <form>
-                <div class="form-control">
+                <div class="form-control" id="firstDiv">
                     <label class="tab2Text" id="labelFirst" > Digite um número </label>
                     <input type="number" name="box4" id="tab">
                 </div> 
 
-                <div class="form-control"> 
+                <div class="form-control" id="secondDiv"> 
                     <label class ="tab2Text" id="labelSecond" > Digite outro número </label>
                     <input type="number" name="box4" id="tab2">
                 </div>     
@@ -43,6 +43,7 @@
                             <option value="Divisão">Divisão</option>
                             <option value="Porcentagem">Porcentagem</option>
                             <option value="IMC">IMC</option>
+                            <option value="Raiz">Raiz</option>
                         </select>
 
                         <input id ="botao" type="button" value="Gerar calculo" onclick="carregar()">
