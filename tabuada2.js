@@ -8,6 +8,8 @@ function carregar(){
    let imgCalculator = window.document.getElementById("resultado2");
    const resultadoIMC = window.document.getElementById("resultadoIMC");
    let DadosOperacao = selec2.options[selec2.selectedIndex].text;
+
+
   
   
     if(tabd.value.length === "" || Number(tabd.value <= 0 )){
@@ -27,7 +29,7 @@ function carregar(){
   
      
         if(DadosOperacao === "Tabuada"){
-         
+     
         res3.style.display ="block" 
         imgCalculator.style.display ="none"
         resultadoIMC.style.display ="none"
@@ -96,7 +98,7 @@ function carregar(){
         selec.appendChild(lista)
   
      }else if(DadosOperacao === "IMC") {
-  
+
         res3.style.display ="none" 
         imgCalculator.style.display ="none"
         resultadoIMC.style.display ="block"
@@ -162,17 +164,32 @@ function carregar(){
   let firstDiv = window.document.querySelector("#firstDiv");
   let secondDiv = window.document.querySelector("#secondDiv");
 
+  
+
   selec2.addEventListener("change",function(){
+
+   firstDiv.style.animation = "none";
+   secondDiv.style.animation = "none";
+
+   setTimeout(function(){
+      firstDiv.style.animation = "";
+      secondDiv.style.animation = ""
+   },5000);
 
    const DadosOperacao2 = selec2.value
    
    if(DadosOperacao2 === "IMC"){
+
+      firstDiv.style.animation = "go-back 5s"
+      secondDiv.style.animation = "go-back 5s"
+
       labelFirst.textContent = "Altura"
       labelSecond.textContent = "Peso"
       tabd.placeholder = "Ponto ou virgula EX:(1,87)"
       tabd.value =""
       tabd2.value = ""
-
+       
+     
    }else if(DadosOperacao2 === "Tabuada" ||
    DadosOperacao2 === "Multiplicação" ||
    DadosOperacao2 === "Subtração" ||
@@ -189,13 +206,18 @@ function carregar(){
 
    if(DadosOperacao2 === "Raiz") {
 
+      firstDiv.style.animation = "go-back 5s"
+      secondDiv.style.animation = "go-back 5s"
+
       labelFirst.textContent = "Número"
       labelSecond.textContent = "Quadrada(2)/cúbica(3)"
       tabd.value =""
       tabd2.value = ""
+    
+   
 
    }
-
+   
 
    console.log(selec2.value)
 
