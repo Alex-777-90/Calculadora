@@ -14,6 +14,7 @@ header {
   box-shadow: -6px 6px 40px #054379 ;
   border-radius: 10px;
   width: 34%;
+  max-width: 670px;
   font-size: 75%;
   margin-left: 33%; 
   margin-bottom: 20px;
@@ -48,6 +49,7 @@ header {
 }
 
 .form-control {
+  max-width: 670px;
   margin-bottom: 10px;
   padding-bottom: 20px;
   background-color: rgb(12, 182, 182);
@@ -109,6 +111,7 @@ header {
 #resultado {
   display: none;
   width: 100%;
+  max-width: 670px;
   /* height: 220px; */
   /* background-color: rgb(12, 192, 192); */
   border-radius: 10px;
@@ -122,6 +125,7 @@ header {
 
 #resultado2{
   width: 100%;
+  max-width: 670px;
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
@@ -135,6 +139,7 @@ header {
 #resultadoIMC {
   display: none;
   width: 100%;
+  max-width: 670px;
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
