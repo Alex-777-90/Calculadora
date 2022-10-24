@@ -258,6 +258,7 @@ async function carregar(){
       labelSecond.textContent = "Conversor de moeda"
       secondDiv.style.height = "85px"
       tabd.value =""
+      tabd.placeholder = ""
       tabd2.style.display ="none"
       tabd2.value = 1
 
@@ -272,6 +273,7 @@ async function carregar(){
       labelSecond.textContent = "Conversor de moeda"
       secondDiv.style.height = "85px"
       tabd.value =""
+      tabd.placeholder = ""
       tabd2.style.display ="none"
       tabd2.value = 1
 
