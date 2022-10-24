@@ -6,6 +6,12 @@
   font-family: verdana;
 
 }
+body {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  background: linear-gradient(90deg,#15ced1 0%,#0462b4 100%);
+}
 
 header {
   color:white;
@@ -13,56 +19,42 @@ header {
   background: linear-gradient(90deg,#0ba5a8 0%,#054379 100%);
   box-shadow: -6px 6px 40px #054379 ;
   border-radius: 10px;
-  width: 34%;
-  max-width: 670px;
+  width: 180%;
   font-size: 75%;
-  margin-left: 33%; 
   margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 70px;
   padding: 7px;
  }
 
- #corpoPrincipal {
-  /* background-color: aqua; */
-  background: linear-gradient(90deg,#15ced1 0%,#0462b4 100%);
- 
-}
-
-#corpoSegundario {
+ #corpoSegundario {
   /* background-color: cadetblue; */
-  width: 34%;
-  margin-left: 33%;
-  height: 500px;
-}
+  width: 180%;
 
-#dados {
+ }
+
+ #dados {
   /* background-color: chartreuse; */
-  height: 280px;
  
-}
+ }
 
-#dados form {
+ #dados form {
   /* background-color: darkred; */
   height: 280px;
   padding-top: 10px;
+ }
 
-}
+ .form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(12, 182, 182);
+    box-shadow: -6px 6px 40px rgb(5, 126, 126) ;
+    border-radius: 10px;
+    padding-top: 10px;
+ }
 
-.form-control {
-  max-width: 670px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  background-color: rgb(12, 182, 182);
-  box-shadow: -6px 6px 40px rgb(5, 126, 126) ;
-  border-radius: 10px;
-  /* padding-left: 20px; */
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
- 
-}
-
-.form-control label {
+ .form-control label {
   margin-bottom: 5px;
   color: #054379;
   font-weight: 700;
@@ -95,7 +87,7 @@ header {
   padding: 5px;
   color: #054379;
 }
-
+ 
 @keyframes go-back {
   0% {
       transform: rotateY(0px);
@@ -106,14 +98,9 @@ header {
   }
 }
 
-
-
 #resultado {
   display: none;
   width: 100%;
-  max-width: 670px;
-  /* height: 220px; */
-  /* background-color: rgb(12, 192, 192); */
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
@@ -125,7 +112,6 @@ header {
 
 #resultado2{
   width: 100%;
-  max-width: 670px;
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
@@ -139,7 +125,6 @@ header {
 #resultadoIMC {
   display: none;
   width: 100%;
-  max-width: 670px;
   border-radius: 10px;
   background-color: rgba(20, 180, 220, 0.797);
   box-shadow: -6px 6px 40px rgb(5, 126, 126);
@@ -158,7 +143,6 @@ header {
   margin-top: 10px;
 }
 
-
 #resultado2 p {
   font-weight: bolder;
   color: #054379;
@@ -169,7 +153,6 @@ header {
   margin-top: 20px;
 
 }
-
 
 #resultado  select{ 
   margin-top: -10px;
@@ -188,15 +171,7 @@ header {
 
 }
 
-.moedaOBS{
-  margin-top: 20px;
-  font-size: 80%;
-  color: #fa0303;
-}
-.tab2Text {
-  
 
-}
 #botao {
   width: 50%;
   margin-left: 25%;
@@ -214,128 +189,157 @@ header {
   background: linear-gradient(90deg,#f4fc03 0%,#fa0303 100%);
 }
 
+.moedaOBS{
+  margin-top: 20px;
+  font-size: 80%;
+  color: #fa0303;
+}
 
 #rodape {
-  margin-top: 160px;
-  width: 100%;
+  margin-top: 25px;
+  width: 180%;
   /* background-color: #054379; */
   background: linear-gradient(90deg,#054379 0%,#0ba5a8 100%);
-  padding: 20px;
+  box-shadow: -2px 2px 3px #037e81 ;
+  padding: 17px;
   color: cyan;
-}
-
-@media (max-width:950px) {
-
-  header {
-    width: 50%;
-    margin-left: 25%; 
-  }
-  .form-control {
-    width: 147%;
-    margin-left: -23%; 
-  }
-
-  #resultado {
-    width: 147%;
-    margin-left: -23%; 
-  }
-
-  #resultado2{
-    width: 147%;
-    margin-left: -23%; 
-  }
-
-  #resultadoIMC {
-    width: 147%;
-    margin-left: -23%; 
-  }
-
-}
-
-@media (max-width:666px) {
-
-  header {
-    width: 61%;
-    margin-left: 22.2%; 
-  }
-  .form-control {
-    width: 180%;
-    margin-left: -31%; 
-  }
-
-  #resultado {
-    width: 180%;
-    margin-left: -31%; 
-  }
-
-  #resultado2 { 
-    width: 180%;
-    margin-left: -31%; 
-  }
-
-  #resultadoIMC {
-    width: 180%;
-    margin-left: -31%; 
-  }
-
+  border-radius: 10px;
 }
 
 @media (max-width:500px) {
-
   header {
-    width: 68%;
-    margin-left: 15%; 
+    width: 162%;
+   
+  }
+
+  #corpoSegundario {
+    width: 162%;
+    
+  }
+
+  #rodape { 
+    width: 162%;
+  }
+
+}
+
+@media (max-width:440px) {
+  header {
+    width: 155%;
+   
+  }
+
+  #corpoSegundario {
+    width: 155%;
+    
+  }
+
+  #rodape { 
+    width: 155%;
+  }
+
+}
+
+@media (max-width:420px) {
+  header {
+    width: 150%;
+   
+  }
+
+  #corpoSegundario {
+    width: 150%;
+    
+  }
+
+  #rodape { 
+    width: 150%;
+  }
+
+}
+
+@media (max-width:396px) {
+  header {
+    width: 135%;
+   
+  }
+
+  #corpoSegundario {
+    width: 135%;
+    
+  }
+
+  #rodape { 
+    width: 135%;
+  }
+
+}
+
+@media (max-width:364px) {
+  header {
+    width: 130%;
+   
+  }
+
+  #corpoSegundario {
+    width: 130%;
+    
+  }
+
+  #rodape { 
+    width: 130%;
+  }
+
+}
+
+@media (max-width:348px) {
+  header {
+    width: 120%;
+   
+  }
+
+  #corpoSegundario {
+    width: 120%;
+    
+  }
+
+  #rodape { 
+    width: 120%;
+  }
+
+}
+
+@media (max-width:318px) {
+  header {
+    width: 110%;
+   
+  }
+
+  #corpoSegundario {
+    width: 110%;
+    
+  }
+
+  #rodape { 
+    width: 110%;
+  }
+
+}
+
+@media (max-width:295px) {
+  header {
+    width: 100%;
+   
+  }
+
+  #corpoSegundario {
+    width: 100%;
+    
+  }
+
+  #rodape { 
+    width: 100%;
+  }
+
+}
+
  
-  }
-  .form-control {
-    width: 235%;
-    margin-left: -67%; 
-  }
-
-  #resultado {
-    width: 235%;
-    margin-left: -67%; 
-  }
-
-  #resultado2 {
-    width: 235%;
-    margin-left: -67%; 
-  }
-
-  #resultadoIMC {
-    width: 235%;
-    margin-left: -67%; 
-  }
-
-}
-
-@media (max-width:487px){
-
-  header {
-    width: 79%;
-    margin-left: 10%; 
-  }
-
-
-}
-
-@media (max-width:500px) and (min-width:488px) {
-
-  header {
-    width: 80%;
-    margin-left: 10%; 
-  }
-
-}
-
-@media(max-width:335px) {
-
-  #op_matematica {
-      font-size: 80%;  
-  }
-}
-
-
-
-
-
