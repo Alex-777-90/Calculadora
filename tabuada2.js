@@ -268,7 +268,7 @@ async function carregar(){
       firstDiv.style.animation = "go-back 5s"
       secondDiv.style.animation = "go-back 5s"
 
-      labelFirst.textContent = "Moeda(dólar)"
+      labelFirst.textContent = "Moeda(euro)"
       labelSecond.textContent = "Conversor de moeda"
       secondDiv.style.height = "85px"
       tabd.value =""
