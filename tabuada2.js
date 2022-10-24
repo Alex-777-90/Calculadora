@@ -241,6 +241,8 @@ async function carregar(){
       labelSecond.textContent = "Digite outro número"
       tabd.placeholder = ""
       tabd2.style.display ="block"
+      tabd.value =""
+      tabd2.value = ""
    }
 
    if(DadosOperacao2 === "Raiz") {
