@@ -1,4 +1,4 @@
-function carregar(){
+async function carregar(){
 
    let tabd = window.document.getElementById("tab");
    let tabd2 = window.document.getElementById("tab2");
@@ -9,8 +9,7 @@ function carregar(){
    const resultadoIMC = window.document.getElementById("resultadoIMC");
    let DadosOperacao = selec2.options[selec2.selectedIndex].text;
 
-
-  
+   
   
     if(tabd.value.length === "" || Number(tabd.value <= 0 )){
   
@@ -149,9 +148,41 @@ function carregar(){
             `
 
          }
-         console.log("testando")
+         
+       }else if(DadosOperacao === "Dollar") {
 
-       }
+         const url = `https://economia.awesomeapi.com.br/json/last/USD-BRL`
+         const response = await fetch(url);
+         const data = await response.json()
+         const real = await data.USDBRL.ask
+
+         res3.style.display ="none" 
+         imgCalculator.style.display ="none"
+         resultadoIMC.style.display ="block"
+
+         resultadoIMC.innerHTML = `
+         <p> 1 dólar esta valendo ${(real).replace(".",",")} em reais ,
+         ${caixaNum} em dólar  esta valendo <strong>${(caixaNum * real).toFixed(2).replace(".",",")}</strong> em reais 
+         </p> 
+         `
+      }else if(DadosOperacao === "Euro") {
+
+         const url = `https://economia.awesomeapi.com.br/json/last/EUR-BRL`
+         const response = await fetch(url);
+         const data = await response.json()
+         const real = await data.EURBRL.ask
+         console.log(data)
+
+         res3.style.display ="none" 
+         imgCalculator.style.display ="none"
+         resultadoIMC.style.display ="block"
+
+         resultadoIMC.innerHTML = `
+         <p> 1 Euro esta valendo ${(real).replace(".",",")} em reais ,
+         ${caixaNum} em Euro esta valendo ${(caixaNum * real).toFixed(2).replace(".",",")} em reais 
+         </p> 
+         `
+      }
   
     }
   }
@@ -174,7 +205,7 @@ function carregar(){
    setTimeout(function(){
       firstDiv.style.animation = "";
       secondDiv.style.animation = ""
-   },5000);
+   },1000);
 
    const DadosOperacao2 = selec2.value
    
@@ -188,6 +219,7 @@ function carregar(){
       tabd.placeholder = "Ponto ou virgula EX:(1,87)"
       tabd.value =""
       tabd2.value = ""
+      tabd2.style.display ="block"
        
      
    }else if(DadosOperacao2 === "Tabuada" ||
@@ -201,7 +233,7 @@ function carregar(){
       labelFirst.textContent = "Digite um número"
       labelSecond.textContent = "Digite outro número"
       tabd.placeholder = ""
-      
+      tabd2.style.display ="block"
    }
 
    if(DadosOperacao2 === "Raiz") {
@@ -213,11 +245,37 @@ function carregar(){
       labelSecond.textContent = "Quadrada(2)/cúbica(3)"
       tabd.value =""
       tabd2.value = ""
-    
-   
+      tabd2.style.display ="block"
 
    }
    
+   if(DadosOperacao2 === "Dollar") {
+
+      firstDiv.style.animation = "go-back 5s"
+      secondDiv.style.animation = "go-back 5s"
+
+      labelFirst.textContent = "Moeda(dólar)"
+      labelSecond.textContent = "Conversor de moeda"
+      secondDiv.style.height = "85px"
+      tabd.value =""
+      tabd2.style.display ="none"
+      tabd2.value = 1
+
+   }
+
+   if(DadosOperacao2 === "Euro") {
+
+      firstDiv.style.animation = "go-back 5s"
+      secondDiv.style.animation = "go-back 5s"
+
+      labelFirst.textContent = "Moeda(dólar)"
+      labelSecond.textContent = "Conversor de moeda"
+      secondDiv.style.height = "85px"
+      tabd.value =""
+      tabd2.style.display ="none"
+      tabd2.value = 1
+
+   }
 
    console.log(selec2.value)
 
