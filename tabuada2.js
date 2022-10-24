@@ -8,7 +8,9 @@ async function carregar(){
    let imgCalculator = window.document.getElementById("resultado2");
    const resultadoIMC = window.document.getElementById("resultadoIMC");
    let DadosOperacao = selec2.options[selec2.selectedIndex].text;
-
+   
+   const url = `https://economia.awesomeapi.com.br/json/last/USD-BRL`
+   const url2 = `https://economia.awesomeapi.com.br/json/last/EUR-BRL`
    
   
     if(tabd.value.length === "" || Number(tabd.value <= 0 )){
@@ -151,7 +153,6 @@ async function carregar(){
          
        }else if(DadosOperacao === "Dollar") {
 
-         const url = `https://economia.awesomeapi.com.br/json/last/USD-BRL`
          const response = await fetch(url);
          const data = await response.json()
          const real = await data.USDBRL.ask
@@ -171,12 +172,11 @@ async function carregar(){
          `
       }else if(DadosOperacao === "Euro") {
 
-         const url = `https://economia.awesomeapi.com.br/json/last/EUR-BRL`
-         const response = await fetch(url);
-         const data = await response.json()
-         const real = await data.EURBRL.ask
-         const NumberReal =  Number(real)
-         console.log(data)
+         const response2 = await fetch(url2);
+         const data2 = await response2.json()
+         const real2 = await data2.EURBRL.ask
+         const NumberReal =  Number(real2)
+         console.log(data2)
          
 
          res3.style.display ="none" 
