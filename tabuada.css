@@ -20,6 +20,7 @@ header {
   box-shadow: -6px 6px 40px #054379 ;
   border-radius: 10px;
   width: 180%;
+  max-width: 470px;
   font-size: 75%;
   margin-bottom: 20px;
   margin-top: 70px;
@@ -29,6 +30,7 @@ header {
  #corpoSegundario {
   /* background-color: cadetblue; */
   width: 180%;
+  max-width: 470px;
 
  }
 
@@ -198,6 +200,7 @@ header {
 #rodape {
   margin-top: 25px;
   width: 180%;
+  max-width: 470px;
   /* background-color: #054379; */
   background: linear-gradient(90deg,#054379 0%,#0ba5a8 100%);
   box-shadow: -2px 2px 3px #037e81 ;
@@ -206,19 +209,22 @@ header {
   border-radius: 10px;
 }
 
-@media (max-width:500px) {
+@media (max-width:545px) {
   header {
     width: 162%;
+    max-width: 370px;
    
   }
 
   #corpoSegundario {
     width: 162%;
+    max-width: 370px;
     
   }
 
   #rodape { 
     width: 162%;
+    max-width: 370px;
   }
 
 }
@@ -226,16 +232,19 @@ header {
 @media (max-width:440px) {
   header {
     width: 155%;
+    max-width: 345px;
    
   }
 
   #corpoSegundario {
     width: 155%;
+    max-width: 345px;
     
   }
 
   #rodape { 
     width: 155%;
+    max-width: 345px;
   }
 
 }
@@ -243,16 +252,19 @@ header {
 @media (max-width:420px) {
   header {
     width: 150%;
+    max-width: 340px;
    
   }
 
   #corpoSegundario {
     width: 150%;
+    max-width: 340px;
     
   }
 
   #rodape { 
     width: 150%;
+    max-width: 340px;
   }
 
 }
@@ -260,16 +272,18 @@ header {
 @media (max-width:396px) {
   header {
     width: 135%;
+    max-width: 320px;
    
   }
 
   #corpoSegundario {
     width: 135%;
-    
+    max-width: 320px;
   }
 
   #rodape { 
     width: 135%;
+    max-width: 320px;
   }
 
 }
@@ -277,16 +291,19 @@ header {
 @media (max-width:364px) {
   header {
     width: 130%;
+    max-width: 310px;
    
   }
 
   #corpoSegundario {
     width: 130%;
+    max-width: 310px;
     
   }
 
   #rodape { 
     width: 130%;
+    max-width: 310px;
   }
 
 }
@@ -294,16 +311,19 @@ header {
 @media (max-width:348px) {
   header {
     width: 120%;
+    max-width: 290px;
    
   }
 
   #corpoSegundario {
     width: 120%;
+    max-width: 290px;
     
   }
 
   #rodape { 
     width: 120%;
+    max-width: 290px;
   }
 
 }
@@ -311,34 +331,46 @@ header {
 @media (max-width:318px) {
   header {
     width: 110%;
+    max-width: 280px;
    
   }
 
   #corpoSegundario {
     width: 110%;
+    max-width: 280px;
     
   }
 
   #rodape { 
     width: 110%;
+    max-width: 280px;
   }
+
+  #op_matematica{
+    font-size: 90%;
+ }
 
 }
 
 @media (max-width:295px) {
   header {
     width: 100%;
-   
+    max-width: 260px;
   }
 
   #corpoSegundario {
     width: 100%;
-    
+    max-width: 260px;
   }
 
   #rodape { 
     width: 100%;
+    max-width: 260px;
   }
+  
+  #op_matematica{
+    font-size: 85%;
+ }
 
 }
 
