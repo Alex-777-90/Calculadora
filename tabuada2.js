@@ -155,15 +155,19 @@ async function carregar(){
          const response = await fetch(url);
          const data = await response.json()
          const real = await data.USDBRL.ask
+         const NumberReal = Number(real)
+         console.log(data)
+         
 
          res3.style.display ="none" 
          imgCalculator.style.display ="none"
          resultadoIMC.style.display ="block"
 
          resultadoIMC.innerHTML = `
-         <p> 1 dólar esta valendo ${(real).replace(".",",")} em reais ,
-         ${caixaNum} em dólar  esta valendo <strong>${(caixaNum * real).toFixed(2).replace(".",",")}</strong> em reais 
+         <p> 1 dólar esta valendo ${(NumberReal).toFixed(2).replace(".",",")} em reais ,
+         ${caixaNum} em dólar  esta valendo <strong>${(caixaNum * NumberReal).toFixed(2).replace(".",",")}</strong> em reais 
          </p> 
+         <p class="moedaOBS">OBS: Para obter resultados em tempo real recarregue a página antes da consulta </p>
          `
       }else if(DadosOperacao === "Euro") {
 
@@ -171,16 +175,19 @@ async function carregar(){
          const response = await fetch(url);
          const data = await response.json()
          const real = await data.EURBRL.ask
+         const NumberReal =  Number(real)
          console.log(data)
+         
 
          res3.style.display ="none" 
          imgCalculator.style.display ="none"
          resultadoIMC.style.display ="block"
 
          resultadoIMC.innerHTML = `
-         <p> 1 Euro esta valendo ${(real).replace(".",",")} em reais ,
-         ${caixaNum} em Euro esta valendo ${(caixaNum * real).toFixed(2).replace(".",",")} em reais 
+         <p> 1 Euro esta valendo ${(NumberReal).toFixed(2).replace(".",",")} em reais ,
+         ${caixaNum} em Euro esta valendo ${(caixaNum * NumberReal).toFixed(2).replace(".",",")} em reais 
          </p> 
+         <p class="moedaOBS">OBS: Para obter resultados em tempo real recarregue a página antes da consulta </p>
          `
       }
   
@@ -251,6 +258,7 @@ async function carregar(){
    
    if(DadosOperacao2 === "Dollar") {
 
+  
       firstDiv.style.animation = "go-back 5s"
       secondDiv.style.animation = "go-back 5s"
 
@@ -266,6 +274,7 @@ async function carregar(){
 
    if(DadosOperacao2 === "Euro") {
 
+      
       firstDiv.style.animation = "go-back 5s"
       secondDiv.style.animation = "go-back 5s"
 
