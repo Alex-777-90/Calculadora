@@ -233,6 +233,7 @@ header {
   header {
     width: 155%;
     max-width: 345px;
+    margin-top: 50px;
    
   }
 
@@ -253,6 +254,7 @@ header {
   header {
     width: 150%;
     max-width: 340px;
+    margin-top: 50px;
    
   }
 
@@ -273,6 +275,7 @@ header {
   header {
     width: 135%;
     max-width: 320px;
+    margin-top: 50px;
    
   }
 
@@ -292,6 +295,7 @@ header {
   header {
     width: 130%;
     max-width: 310px;
+    margin-top: 50px;
    
   }
 
@@ -312,6 +316,7 @@ header {
   header {
     width: 120%;
     max-width: 290px;
+    margin-top: 50px;
    
   }
 
@@ -332,6 +337,7 @@ header {
   header {
     width: 110%;
     max-width: 280px;
+    margin-top: 50px;
    
   }
 
@@ -356,6 +362,7 @@ header {
   header {
     width: 100%;
     max-width: 260px;
+    margin-top: 50px;
   }
 
   #corpoSegundario {
