@@ -92,11 +92,11 @@ header {
  
 @keyframes go-back {
   0% {
-      transform: rotateY(0px);
+      transform: rotateY(-180deg);
   }
   100% {
       
-      transform: rotateY(360deg);
+      transform: rotateY(0deg);
   }
 }
 

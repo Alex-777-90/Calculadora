@@ -212,7 +212,7 @@ async function carregar(){
    setTimeout(function(){
       firstDiv.style.animation = "";
       secondDiv.style.animation = ""
-   },1000);
+   },4000);
 
    const DadosOperacao2 = selec2.value
    
