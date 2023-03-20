@@ -201,9 +201,10 @@ async function carregar(){
   let labelSecond = window.document.querySelector("#labelSecond");
   let firstDiv = window.document.querySelector("#firstDiv");
   let secondDiv = window.document.querySelector("#secondDiv");
-
+  let iconDollar = window.document.querySelector(".fa-solid");
+  let titleconversorMoedaDollar = window.document.querySelector(".titleconversorMoedaDollar");
+  let titleconversorMoedaEuro = window.document.querySelector(".titleconversorMoedaEuro");
   
-
   selec2.addEventListener("change",function(){
 
    firstDiv.style.animation = "none";
@@ -220,13 +221,16 @@ async function carregar(){
 
       firstDiv.style.animation = "go-back 5s"
       secondDiv.style.animation = "go-back 5s"
-
+      labelSecond.style.display ="block"
       labelFirst.textContent = "Altura"
       labelSecond.textContent = "Peso"
       tabd.placeholder = "Ponto ou virgula EX:(1,87)"
       tabd.value =""
       tabd2.value = ""
       tabd2.style.display ="block"
+      iconDollar.style.display ="none"
+      titleconversorMoedaDollar.style.display ="none"
+      titleconversorMoedaEuro.style.display ="none"
        
      
    }else if(DadosOperacao2 === "Tabuada" ||
@@ -238,23 +242,30 @@ async function carregar(){
    DadosOperacao2 === "Raiz") {
    
       labelFirst.textContent = "Digite um número"
+      labelSecond.style.display ="block"
       labelSecond.textContent = "Digite outro número"
       tabd.placeholder = ""
       tabd2.style.display ="block"
       tabd.value =""
       tabd2.value = ""
+      iconDollar.style.display ="none"
+      titleconversorMoedaDollar.style.display ="none"
+      titleconversorMoedaEuro.style.display ="none"
    }
 
    if(DadosOperacao2 === "Raiz") {
 
       firstDiv.style.animation = "go-back 5s"
       secondDiv.style.animation = "go-back 5s"
-
+      labelSecond.style.display ="block"
       labelFirst.textContent = "Número"
       labelSecond.textContent = "Quadrada(2)/cúbica(3)"
       tabd.value =""
       tabd2.value = ""
       tabd2.style.display ="block"
+      iconDollar.style.display ="none"
+      titleconversorMoedaDollar.style.display ="none"
+      titleconversorMoedaEuro.style.display ="none"
 
    }
    
@@ -265,12 +276,17 @@ async function carregar(){
       secondDiv.style.animation = "go-back 5s"
 
       labelFirst.textContent = "Moeda(dólar)"
-      labelSecond.textContent = "Conversor de moeda"
+      // labelSecond.textContent = "Conversor de moeda"
+      // labelSecond.style.textAlign = "center";
+      labelSecond.style.display ="none"
       secondDiv.style.height = "85px"
       tabd.value =""
       tabd.placeholder = ""
       tabd2.style.display ="none"
       tabd2.value = 1
+      iconDollar.style.display ="block"
+      titleconversorMoedaDollar.style.display ="block"
+      titleconversorMoedaEuro.style.display ="none"
 
    }
 
@@ -281,12 +297,16 @@ async function carregar(){
       secondDiv.style.animation = "go-back 5s"
 
       labelFirst.textContent = "Moeda(euro)"
-      labelSecond.textContent = "Conversor de moeda"
+      // labelSecond.textContent = "Conversor de moeda"
+      labelSecond.style.display ="none"
       secondDiv.style.height = "85px"
       tabd.value =""
       tabd.placeholder = ""
       tabd2.style.display ="none"
       tabd2.value = 1
+      iconDollar.style.display ="none"
+      titleconversorMoedaDollar.style.display ="none"
+      titleconversorMoedaEuro.style.display ="flex"
 
    }
 

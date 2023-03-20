@@ -89,6 +89,32 @@ header {
   padding: 5px;
   color: #054379;
 }
+
+.fa-solid {
+  display:none;
+  color: #d8df24;
+  border: #aeb406;
+  font-size: 277%;
+  padding-bottom: 5px;
+}
+
+.titleconversorMoedaDollar{
+  display:none;
+  margin: 0 auto;
+  color: #d8df24;
+  
+}
+
+.imgEuro {
+ width: 37%
+}
+.titleconversorMoedaEuro  {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  color: #d8df24;
+}
  
 @keyframes go-back {
   0% {
